@@ -1,4 +1,4 @@
-## My Laravel Template
+## My Laravel+Vue Template
 
 Using: PHP 8.0+, Laravel 9.45, Vue.js 3, Inertia.js, tailwind.css, Font Awesome 6
 
