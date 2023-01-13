@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ff9d82c339ec36576ba928d17e6de876",
+    "content-hash": "bfd9725f17e76b91497c7d951978ff06",
     "packages": [
         {
             "name": "brick/math",
@@ -6129,6 +6129,60 @@
                 "source": "https://github.com/webmozarts/assert/tree/1.11.0"
             },
             "time": "2022-06-03T18:03:27+00:00"
+        },
+        {
+            "name": "yzen.dev/plain-to-class",
+            "version": "1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yzen-dev/plain-to-class.git",
+                "reference": "e6b86b2ac15bda285ad8a4a1b70e9a7c3b3ad7c1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yzen-dev/plain-to-class/zipball/e6b86b2ac15bda285ad8a4a1b70e9a7c3b3ad7c1",
+                "reference": "e6b86b2ac15bda285ad8a4a1b70e9a7c3b3ad7c1",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpstan/phpstan": "^0.12.82",
+                "phpunit/phpunit": "^9.3",
+                "squizlabs/php_codesniffer": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ClassTransformer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Andey Iatsenko",
+                    "email": "yzen.dev@gmail.com"
+                }
+            ],
+            "description": "Class-transformer to transform your dataset into a structured object",
+            "keywords": [
+                "class",
+                "class-transformer",
+                "convert",
+                "object",
+                "php",
+                "transformer"
+            ],
+            "support": {
+                "issues": "https://github.com/yzen-dev/plain-to-class/issues",
+                "source": "https://github.com/yzen-dev/plain-to-class"
+            },
+            "time": "2022-06-10T18:22:54+00:00"
         },
         {
             "name": "zircote/swagger-php",

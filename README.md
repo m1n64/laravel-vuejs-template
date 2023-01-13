@@ -2,7 +2,7 @@
 
 Stack: PHP 8.0+, Laravel 9.45, Vue.js 3, Inertia.js, tailwind.css 
 
-Backend libraries: Snowflake, predis,  Laravel-Swagger, Laravel-Actions
+Backend libraries: [Snowflake](https://github.com/godruoyi/php-snowflake), [predis](https://github.com/predis/predis),  [Laravel-Swagger](https://github.com/DarkaOnLine/L5-Swagger), [Laravel-Actions](https://laravelactions.com/), [plain-to-class](https://github.com/yzen-dev/plain-to-class) (make DTO model)
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
@@ -81,3 +81,4 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 6. php artisan storage:link
 7. php artisan migrate
 8. npm run dev
+
