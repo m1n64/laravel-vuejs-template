@@ -2,7 +2,7 @@
     "name": "m1n64/laravel9-vue",
     "type": "project",
     "version": "1.0.0",
-    "description": "The Laravel Framework.",
+    "description": "The Laravel with Vue.js 3 template.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
