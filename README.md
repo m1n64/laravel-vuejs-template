@@ -6,6 +6,12 @@ Using: PHP 8.1+, Laravel 9.45, Vue.js 3, Inertia.js, tailwind.css, Font Awesome 
 ```
 composer create-project m1n64/laravel9-vue my-best-project
 ```
+```
+cd my-best-project
+```
+```
+./install.sh
+```
 
 Backend libraries: [Snowflake](https://github.com/godruoyi/php-snowflake), [predis](https://github.com/predis/predis),  [Laravel-Swagger](https://github.com/DarkaOnLine/L5-Swagger), [Laravel-Actions](https://laravelactions.com/), [plain-to-class](https://github.com/yzen-dev/plain-to-class) (make DTO model)
 
