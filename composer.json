@@ -1,6 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "m1n64/laravel9-vue",
     "type": "project",
+    "version": "1.0.0",
     "description": "The Laravel Framework.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
