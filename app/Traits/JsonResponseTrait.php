@@ -3,7 +3,7 @@
 namespace App\Traits;
 
 
-use App\Classes\Constants\StatusCodes;
+use App\Constants\StatusCodes;
 
 trait JsonResponseTrait
 {
