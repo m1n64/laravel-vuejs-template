@@ -13,7 +13,7 @@ cd my-best-project
 ./install.sh
 ```
 
-Backend libraries: [Snowflake](https://github.com/godruoyi/php-snowflake), [predis](https://github.com/predis/predis),  [Laravel-Swagger](https://github.com/DarkaOnLine/L5-Swagger), [Laravel-Actions](https://laravelactions.com/), [plain-to-class](https://github.com/yzen-dev/plain-to-class) (make DTO model)
+Backend libraries: [Snowflake](https://github.com/godruoyi/php-snowflake), [predis](https://github.com/predis/predis),  [Laravel-Swagger](https://github.com/DarkaOnLine/L5-Swagger), [Laravel-Actions](https://laravelactions.com/), [plain-to-class](https://github.com/yzen-dev/plain-to-class) (make DTO model), [Laravel-permission](https://github.com/spatie/laravel-permission)
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 

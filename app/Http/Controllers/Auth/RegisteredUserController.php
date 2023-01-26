@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Constants\Messages;
+use App\Helpers\CookiesHelper;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Providers\RouteServiceProvider;
@@ -50,8 +52,8 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
         
-        $token = Auth::user()->createToken("__token");
+        $token = Auth::user()->createToken(Messages::TOKEN_NAME);
 
-        return redirect(RouteServiceProvider::HOME)->withCookie(CookiesHelper::setCookie("__token", $token->plainTextToken));
+        return redirect(RouteServiceProvider::HOME)->withCookie(CookiesHelper::setCookie(Messages::AUTH_TOKEN_NAME, $token->plainTextToken));
     }
 }

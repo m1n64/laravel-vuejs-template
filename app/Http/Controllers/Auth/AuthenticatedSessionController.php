@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Constants\Messages;
 use App\Http\Controllers\Controller;
 use App\Helpers\CookiesHelper;
 use App\Http\Requests\Auth\LoginRequest;
@@ -38,9 +39,9 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
         
-        $token = Auth::user()->createToken("__token");
+        $token = Auth::user()->createToken(Messages::TOKEN_NAME);
 
-        return redirect()->intended(RouteServiceProvider::HOME)->withCookie(CookiesHelper::setCookie("__token", $token->plainTextToken));
+        return redirect()->intended(RouteServiceProvider::HOME)->withCookie(CookiesHelper::setCookie(Messages::AUTH_TOKEN_NAME, $token->plainTextToken));
     }
 
     /**
@@ -57,6 +58,6 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('/')->withCookie(CookiesHelper::setCookie("__token"));
+        return redirect('/')->withCookie(CookiesHelper::setCookie(Messages::AUTH_TOKEN_NAME));
     }
 }

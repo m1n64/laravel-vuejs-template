@@ -43,10 +43,11 @@ if [ ! -d "./public/storage" ]; then
 fi
 
 if [ ! -f "./.env" ]; then
-   cp .env.example .env
+   cp '.env.example' '.env'
    php artisan key:generate
-   
-   if read -p "Enter your DB user: " user
+fi
+
+if read -p "Enter your DB user: " user
    then
       sed -ir "s/DB_USERNAME=.*/DB_USERNAME=$user/" .env
    else
@@ -54,26 +55,25 @@ if [ ! -f "./.env" ]; then
       echo "php artisan serve and npm run dev"
       exit
    fi
-   
+
    if read -p "Enter your DB password: " password
    then
       sed -ir "s/DB_PASSWORD=.*/DB_PASSWORD=$password/" .env
    else
       echo "Done! Next - config DB connection in .env and enter:"
       echo "php artisan serve and npm run dev"
-      exit
    fi
-   
+
    if read -p "Enter your Database name: " dbname
    then
       sed -ir "s/DB_DATABASE=.*/DB_DATABASE=$dbname/" .env
       mysql -u $user -p$password -e "CREATE DATABASE IF NOT EXISTS $dbname"
-      php artisan migrate
+      php artisan migrate --seed
    else
       echo "Done! Next - config DB connection in .env and enter:"
       echo "php artisan serve and npm run dev"
       exit
    fi
-fi
 
 echo "Done!"
+
